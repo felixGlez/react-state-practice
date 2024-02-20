@@ -27,7 +27,7 @@ const increment = (number, setNumber) => {
 	setNumber(number + 1);
 };
 
-const restart = (number, setNumber) => {
+const restart = setNumber => {
 	setNumber(0);
 };
 
