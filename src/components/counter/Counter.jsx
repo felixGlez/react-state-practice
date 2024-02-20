@@ -13,7 +13,7 @@ const Counter = () => {
 			>
 				-1
 			</button>
-			<button onClick={() => restart(number, setNumber)}>Restart</button>
+			<button onClick={() => restart(setNumber)}>Restart</button>
 			<button onClick={() => increment(number, setNumber)}>+1</button>
 		</>
 	);
