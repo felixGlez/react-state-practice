@@ -1,5 +1,6 @@
 const Button = ({ children, action }) => {
 	// Se podría enviar como prop el contenido del botón desde Counter.jsx, pero normalmente se hace así, con children, que es el contenido de la etiqueta:
+
 	return (
 		<>
 			<button onClick={action}>{children}</button>
