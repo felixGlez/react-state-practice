@@ -5,12 +5,18 @@ import { StyledSquare } from './styles';
 const Square = () => {
 	/*
     IMPORTANTE: Los estados que sean siempre que se pueda o Booleanos o Números.
-    Con booleano (que sería la forma más correcta):
+    Ejemplo con booleano (que sería la forma más correcta):
 
     const [isGreen, setIsGreen] = useState(false)
 
     return (
 		<StyledSquare $color={isGreen ? 'green' : 'red'}>
+
+        ----------
+        El ternario se suele poner directamente en styled components, osea en StyledSquare, por lo tanto lo enviaríamos así:
+		<StyledSquare $color={isGreen}>
+        ----------
+
 			<Button action={() => changeColor(isGreen, setIsGreen)}>Change Color</Button>
 		</StyledSquare>
 	);
@@ -20,8 +26,9 @@ const Square = () => {
     const changeColor = (isGreen, setIsGreen) => {
         setIsGreen(!isGreen)
     };
-
     */
+
+	/* ESTA FORMA SIGUIENTE DE HACERLA FUE LA PRIMERA QUE YO HICE, QUE ES LA MENOS CORRECTA: */
 	const [color, setColor] = useState('red');
 	console.log(color);
 	return (
